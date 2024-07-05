@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <assert.h>
 
-int OutOfRange(float val1, float val2, float chargeRate)
+int OutOfRange(float val1, float val2, float val3)
 {
   if(val1 < 0 || val1 > 45) 
   {
