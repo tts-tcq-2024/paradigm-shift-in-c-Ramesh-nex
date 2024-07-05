@@ -3,7 +3,7 @@
 
 int OutOfRange(float val, float min, float max ,int out)
 {
-  if (value < min || value > max) {
+  if (val < min || val > max) {
          if(out ==1)
   {
     printf("Temperature out of range!\n");
