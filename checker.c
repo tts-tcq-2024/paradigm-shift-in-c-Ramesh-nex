@@ -1,28 +1,27 @@
 #include <stdio.h>
 #include <assert.h>
 
-int OutOfRange(float val, float min, float max ,int e)
+int OutOfRange(float val, float min, float max ,int out)
 {
   if (value < min || value > max) {
-        Display(e);
-        return 0;
-    }
-    return 1;
-}
-void Display(int out)
-{
-  if(out ==1)
+         if(out ==1)
   {
     printf("Temperature out of range!\n");
+     return 0;
   }
   else if(out ==2)
   {
     printf("State of Charge out of range!\n");
+     return 0;
   }
   else
   {
     printf("Charge Rate out of range!\n");
+     return 0;
   }
+
+    }
+    return 1;
 }
 int batteryIsOk(float temperature, float soc, float chargeRate)
 {
