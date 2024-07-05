@@ -1,21 +1,13 @@
 #include <stdio.h>
 #include <assert.h>
 
-int OutOfRange(float val1, float val2, float val3)
+int OutOfRange(float val, float min, float max ,int e)
 {
-  if(val1 < 0 || val1 > 45) 
-  {
+  if (value < min || value > max) {
+        Display(e);
+        return 0;
+    }
     return 1;
-  }
-  else if(val2 < 20 || val2 > 80) 
-  {
-    return 2;
-  }
-  else if(val3>0.8)
-  {
-    return 3;
-  }
-  return 0;
 }
 void Display(int out)
 {
@@ -34,14 +26,9 @@ void Display(int out)
 }
 int batteryIsOk(float temperature, float soc, float chargeRate)
 {
-  int a;
-  a=OutOfRange( temperature,  soc,  chargeRate);
-  if(a!=0)
-  {
-    Display(a);
-    return 0;
-  }
-  return 1;
+   return OutOfRange(temperature,0,45,1)
+      && OutOfRange(soc,20,80,2)
+      && OutOfRange(chargeRate,0,0.8,3);
 }
 
 int main() {
