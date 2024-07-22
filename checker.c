@@ -3,11 +3,18 @@
 
 int language = 0;
 
+void PrintMessage(const char* msg) {
+    if (language == 0) {
+        printf("EN: %s\n", msg_en);
+    } else if (language == 1) {
+        printf("DE: %s\n", msg_de);
+    }
+}
 int OutOfRange(float val, float min, float max ,const char* msg)
 {
   if (val < min || val > max) 
   {
-    printf("%s\n",msg);
+    PrintMessage(msg);
     return 0;
   }
     return 1;
