@@ -1,14 +1,6 @@
 #include <stdio.h>
 #include <assert.h>
 
-typedef enum {
-    ENGLISH,
-    GERMAN
-} Language;
-
-Language language = ENGLISH;
-
-// Function to check if a value is out of specified range
 int OutOfRange(float val, float min, float max, const char* msg_en, const char* msg_de) 
 {
     if (val < min || val > max)
