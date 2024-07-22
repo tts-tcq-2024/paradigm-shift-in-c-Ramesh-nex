@@ -3,8 +3,7 @@
 
 typedef enum {
     ENGLISH,
-    GERMAN,
-    LANGUAGE_COUNT // This will be the number of languages supported
+    GERMAN
 } Language;
 
 Language language = ENGLISH;
