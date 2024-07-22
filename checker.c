@@ -1,7 +1,13 @@
 #include <stdio.h>
 #include <assert.h>
 
-int language = 0;
+typedef enum {
+    ENGLISH,
+    GERMAN,
+    LANGUAGE_COUNT // This will be the number of languages supported
+} Language;
+
+Language language = ENGLISH;
 
 // Function to print messages based on language selection
 void PrintMessage(const char* msg_en, const char* msg_de)
