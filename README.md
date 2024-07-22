@@ -14,6 +14,14 @@ Electric Vehicles have BMS - Battery Management Systems
 
 [Here is a reference for the maximum charge rate](https://www.electronics-notes.com/articles/electronic_components/battery-technology/li-ion-lithium-ion-charging.php#:~:text=Constant%20current%20charge:%20In%20the%20first%20stage%20of,rate%20of%20a%20maximum%20of%200.8C%20is%20recommended.)
 
+## Extension
+Support a language in addition to English
+Our market has expanded to German-speaking countries! Switch the language of the printed messages based on a global variable.
+
+Use Google translate if you aren't familiar with German.
+
+Keep in mind: We could add more languages in future. Minimize the code-change required.
+
 ## Possible purpose
 
 - Protect batteries while charging:
