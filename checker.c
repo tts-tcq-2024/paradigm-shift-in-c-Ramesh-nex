@@ -8,7 +8,6 @@ int OutOfRange(float val, float min, float max ,const char* msg)
     printf("%s\n",msg);
     return 0;
   }
-
     return 1;
 }
 int batteryIsOk(float temperature, float soc, float chargeRate)
