@@ -8,23 +8,6 @@ typedef enum {
 
 Language language = ENGLISH;
 
-// Function to print messages based on language selection
-void PrintMessage(const char* msg_en, const char* msg_de)
-{
-    switch (language) 
-    {
-        case 0:
-            printf("EN: %s\n", msg_en);
-            break;
-        case 1:
-            printf("DE: %s\n", msg_de);
-            break;
-        default:
-            printf("Language not supported\n");
-            break;
-    }
-}
-
 // Function to check if a value is out of specified range
 int OutOfRange(float val, float min, float max, const char* msg_en, const char* msg_de) 
 {
