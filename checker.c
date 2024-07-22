@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <assert.h>
 
+int language = 0;
+
 int OutOfRange(float val, float min, float max ,const char* msg)
 {
   if (val < min || val > max) 
